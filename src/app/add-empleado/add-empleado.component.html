@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Agregar Empleado</h2>
+    <form (ngSubmit)="saveEmpleado()">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" class="form-control" [(ngModel)]="empleado.nombre" name="nombre" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" class="form-control" [(ngModel)]="empleado.apellido" name="apellido" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" [(ngModel)]="empleado.email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="foto">Foto URL</label>
+        <input type="text" id="foto" class="form-control" [(ngModel)]="empleado.foto" name="foto">
+      </div>
+  
+      <div class="form-group">
+        <label for="fechaContratacion">Fecha de Contratación</label>
+        <input type="date" id="fechaContratacion" class="form-control" [(ngModel)]="empleado.fechaContratacion" name="fechaContratacion" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>
+  
